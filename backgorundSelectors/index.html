@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #color {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(33% - 10px);
+        height: 100px;
+        background-color: red;
+        margin-left: 10px;
+        margin-top: 10px;
+        color: white;
+        font-size: 20px;
+      }
+      #color:nth-child(1) {
+        background-color: green;
+      }
+      #color:nth-child(2) {
+        background-color: yellow;
+      }
+      #color:nth-child(3) {
+        background-color: blue;
+      }
+      #color:nth-child(4) {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="color" class="green">1</div>
+      <div id="color" class="yellow">2</div>
+      <div id="color" class="blue">3</div>
+      <div id="color" class="pink">4</div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

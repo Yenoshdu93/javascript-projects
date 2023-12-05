@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accardian</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: gray;
+      }
+      .acardian {
+        width: 60%;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      .question {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      .question::after {
+        content: "+";
+        text-align: end;
+      }
+      .answer {
+        width: 100%;
+        padding-top: 10px;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s ease;
+      }
+      .active .answer {
+        height: 80px;
+      }
+      .active .question::after {
+        content: "-";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="acardian">
+      <h1>Fequently answered Questions</h1>
+      <div class="content">
+        <div class="question">What is Your favourite color and Why?</div>
+        <div class="answer">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nihil
+          quis ullam tenetur magni culpa dolorum ea molestias, facilis vero
+          saepe animi voluptatem cumque harum deleniti nesciunt accusantium
+          quasi molestiae. Quos quidem nihil modi, ea cum totam voluptatum
+        </div>
+      </div>
+      <div class="content">
+        <div class="question">What is Your favourite color and Why?</div>
+        <div class="answer">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nihil
+          quis ullam tenetur magni culpa dolorum ea molestias, facilis vero
+          saepe animi voluptatem cumque harum deleniti nesciunt accusantium
+          quasi molestiae. Quos quidem nihil modi, ea cum totam voluptatum
+        </div>
+      </div>
+      <div class="content">
+        <div class="question">What is Your favourite color and Why?</div>
+        <div class="answer">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nihil
+          quis ullam tenetur magni culpa dolorum ea molestias, facilis vero
+          saepe animi voluptatem cumque harum deleniti nesciunt accusantium
+          quasi molestiae. Quos quidem nihil modi, ea cum totam voluptatum
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

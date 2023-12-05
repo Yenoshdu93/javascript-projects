@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+      }
+      .timer {
+        font-size: 4rem;
+      }
+      .container {
+        width: 40%;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .startstopbtn {
+        border: none;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+      }
+      .resetBtn {
+        border: none;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 10px;
+        background-color: rgb(139, 0, 0);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer">00:00:00</div>
+      <div class="buttons">
+        <button class="startstopbtn">start</button>
+        <button class="resetBtn">restart</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
